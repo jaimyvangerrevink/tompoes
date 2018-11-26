@@ -5,25 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>index.jsp</title>
+<title>Home</title>
 </head>
 <body>
-<%-- Include een header --%>
+
 <%@ include file="WEB-INF/jspf/header.jspf"%>
+<br></br>
 
-<%-- Aanmaken van een variable en deze weergeven in een p --%>
-<%! int test = 69; %>
-	<p> variable test = <%= test %>.</p>
-	
-<% if (test == 69) { %>
-	6ix9ine is een goeie rapper.
-<% } else { %>
-	Het magische getal dat variable test moet hebben is 69, probeer het eens. <br />
-<% } %>
-	
-<%= config.getInitParameter("6ix9ine") %>
 
-<%-- Include een footer --%>
+
+
 <%@ include file="WEB-INF/jspf/footer.jspf"%>
 </body>
 </html>
